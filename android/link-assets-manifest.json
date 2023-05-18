@@ -1,0 +1,37 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/BebasNeue-Regular.ttf",
+      "sha1": "ac208c2416e2ad9f6324697b98b8fc7ccb338f9e"
+    },
+    {
+      "path": "assets/fonts/Oswald-Bold.ttf",
+      "sha1": "62606a612ed97a12c09a47582f36854090479c86"
+    },
+    {
+      "path": "assets/fonts/Oswald-ExtraLight.ttf",
+      "sha1": "c25961a3d63197e92c30c14dcccba5990e4f454d"
+    },
+    {
+      "path": "assets/fonts/Oswald-Light.ttf",
+      "sha1": "3ef35d348506b3f573e2667e15e4529c1567eaae"
+    },
+    {
+      "path": "assets/fonts/Oswald-Medium.ttf",
+      "sha1": "2e9a0e6a0b505e4e7d5a9bca01796a83e60a1b2c"
+    },
+    {
+      "path": "assets/fonts/Oswald-Regular.ttf",
+      "sha1": "0d262215fce2b962d7857dba319786b907adce01"
+    },
+    {
+      "path": "assets/fonts/Oswald-SemiBold.ttf",
+      "sha1": "840a320f347d0918bd3a3638dbde42729e732113"
+    },
+    {
+      "path": "assets/fonts/Oswald-VariableFont_wght.ttf",
+      "sha1": "c78f08069c66a9256f766179ebbc4458a936f6e5"
+    }
+  ]
+}
