@@ -4,7 +4,7 @@ import { AsyncThunkConfig } from "../store"
 import { StorageKey } from "../../common/enums/enums"
 import { TaskType } from "../../common/types"
 import { profile } from "./reducer"
-import { getDate } from "../../utils/date"
+import { getDate, getDateTime } from "../../utils/date"
 
 export const saveTasks = createAsyncThunk<any, Array<TaskType>, AsyncThunkConfig>(ActionType.SAVE_TASKS,
   async (value, { extra }) => {
@@ -97,7 +97,9 @@ export const checkTask = createAsyncThunk<any, any, AsyncThunkConfig>(ActionType
     let tasks = await storage.load(StorageKey.TASKS)
 
     const today = await storage.load(StorageKey.TODAY)
-
+    console.log("Date device:",new Date())
+    console.log("Date    app:", getDateTime())
+    console.log("progress:",progress)
 
     if (today !== getDate()) {
       await storage.save(StorageKey.TODAY, getDate())
@@ -131,6 +133,14 @@ export const checkTask = createAsyncThunk<any, any, AsyncThunkConfig>(ActionType
 
       if (new Date(getDate()).getTime() - new Date(progress[progress.length - 1]).getTime() > 86400000) {
         progress = []
+        tasks = tasks.map(task => {
+          task.isDone = false
+          return task
+        })
+        if (profile) {
+          profile.day = 1
+          profile.todayDone = false
+        }
         console.log("LOST")
       }
 

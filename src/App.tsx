@@ -10,7 +10,6 @@ import store from "./store/store"
 import { AppNavigator } from "./navigators"
 import { colors } from "./theme"
 
-
 const App = () => {
 
   return (

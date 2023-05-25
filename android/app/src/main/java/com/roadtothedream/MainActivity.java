@@ -1,4 +1,7 @@
 package com.roadtothedream;
+import android.os.Bundle;
+import com.zoontek.rnbootsplash.RNBootSplash;
+
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
@@ -32,5 +35,10 @@ public class MainActivity extends ReactActivity {
         DefaultNewArchitectureEntryPoint.getConcurrentReactEnabled() // concurrentRootEnabled
         );
   }
+    @Override
+      protected void onCreate(Bundle savedInstanceState) {
+        RNBootSplash.init(this); // ⬅️ initialize the splash screen
 
+        super.onCreate(null); // or super.onCreate(null) with react-native-screens
+      }
 }

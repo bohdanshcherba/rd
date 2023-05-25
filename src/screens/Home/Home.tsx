@@ -1,6 +1,5 @@
 import * as React from "react"
 import { Text, View, ViewStyle } from "react-native"
-import CheckBox from "@react-native-community/checkbox"
 import { colors } from "../../theme"
 import { Task } from "./components/Task"
 import { useAppDispatch, useAppSelector } from "../../store/store"
@@ -10,7 +9,7 @@ import { checkTask, loadTasks } from "../../store/app/action"
 
 export const HomeScreen = ({ navigation }) => {
   const dispatch = useAppDispatch()
-  const { tasks, progress, profile } = useAppSelector(state => state.AppReducer)
+  const { tasks, profile } = useAppSelector(state => state.AppReducer)
 
   useEffect(() => {
     dispatch(loadTasks([]))

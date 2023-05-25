@@ -18,10 +18,7 @@ export const Header: FC<Props> = ({ day, dayDone }) => {
       Road to the Dream
     </Text>
     <View style={{flexDirection:"row"}}>
-      {day && <Text style={$subText}>
-        День: {day}
-
-      </Text>}
+      {day ? <Text style={$subText}>День: {day}</Text>:null}
       {dayDone &&
         <View style={$check}>
           <Icon icon={"check2"} size={23} color={colors.text} />
