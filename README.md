@@ -8,6 +8,8 @@ This unique app revolves around the concept of challenges, where you set tasks f
 - Not just TO-DO App
 - Progress Visualization
 - Flexible settings for your personal rhythm
+- Rigid system of motivation
+  (If you don`t do your task for today, your progress will be annulled automaticly, and you will start from begin)
 
 ### Preview:
 ![rd](https://github.com/bohdanshcherba/rd/assets/73034554/4b72ef3c-970e-49a6-94a2-73c924b351ee)
